@@ -20,6 +20,30 @@
       <header id="header">
         Hello Firebase
       </header>
+      <script id="tmpl-index-header" type="text/html">
+        <a target="_blank" href="http://github.com/firebase/firefeed" class="ribbon-github">
+          <img src="www/img/ribbon-github.png" alt="Fork me on GitHub" />
+        </a>
+        <a target="_blank" href="http://firebase.github.io" class="ribbon-curl">
+          <img src="www/img/curl-static.gif" width="200" height="200" alt="Official example"></a>
+        </a>
+      </script>
+      <script id="tmpl-page-header" type="text/html">
+        <div class="wrapper cf">
+          <h1 class="logo"><a href="#" id="top-logo"><img src="www/img/wordmark.png" alt="Firefeed" /></a></h1>
+          <nav>
+            <a id="search-button" href="#">Search</a>
+            {{#user}}
+            &nbsp;|&nbsp;
+            <a id="logout-button" href="#">Logout</a>
+            {{/user}}
+          </nav>
+        </div>
+      </script>
+
+      <div id="body">
+      </div>
+      
 
 
 
